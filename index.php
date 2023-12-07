@@ -242,7 +242,7 @@
 					</div>
 					<div>
 						<p>INTERVIEW QUESTIONS</p>
-						<ul id="qiestions">
+						<ul id="questions">
 							
 						</ul>
 					</div>
@@ -255,7 +255,32 @@
 					<div>
 						<p>OFFICE ADDRESS</p>
 						<ul id="office">
-							
+							<li>
+								<a>CONTACT US</a>
+							</li>
+							<li>
+							<i class="material-icons">location_on</i>
+								<a> GANGA NAGAR SECTOR-2,NEAR <br> SHIV MANDIR, MANGLA CHOWK , <br> BILASPUR-495001, CHHATTISGARH</a>
+							</li>
+							<li>
+							<div class="display-flex ">
+								<i class="material-icons  fs-20">call</i>
+								<p> +91-83 19 63 60 62 </p>
+							</div>
+						</li>
+						<li>
+						<div class="display-flex ">
+							<i class="material-icons fs-20">call</i>
+							<p> +91-96 91 12 42 51 </p>
+						</div>
+						
+						</li>
+						<li>
+						<div class="display-flex ">
+							<i class="material-icons fs-20">call</i>
+							<p>  +91-77 52 49 40 36 </p>
+						</div>
+						</li>
 						</ul>
 					</div>
 				</div>

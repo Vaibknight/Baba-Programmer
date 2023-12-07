@@ -108,7 +108,9 @@ for (var i in arr) {
 
 // console.log(courseArr);
 
-function footer(coursList) {
+function footer(coursList, questionList, corporateList) {
+  console.log(questionList);
+  console.log(corporateList);
   for (var i in coursList) {
     // console.log(courseArr[i]);
 
@@ -117,6 +119,22 @@ function footer(coursList) {
 	  		<a>${coursList[i]}</a>
 		  </li>
 		`;
+  }
+
+  for (var i in questionList) {
+    questions.innerHTML += `
+		<li>
+			<a>${questionList[i]}</a>
+		</li>
+	`;
+  }
+
+  for (var i in corporateList) {
+    corporate.innerHTML += `
+	<li>
+		<a>${corporateList[i]}</a>
+	</li>
+`;
   }
 }
 
@@ -141,9 +159,32 @@ function footerArray() {
     "LARAVEL",
   ];
 
-  let QuestionsArray = [];
+  let QuestionsArray = [
+    "HTML5 AND CSS3",
+    "JAVASCRIPT",
+    "JQUERY AND AJAX",
+    "ANGULARJS",
+    "REACT",
+    "JSON",
+    "C && C++",
+    "JAVA",
+    "PHP && MYSQL",
+    "PYTHON",
+    "SEO",
+    "DIGITAL MARKETING",
+    "DJANGO",
+    "LARAVEL",
+  ];
 
-  footer(courseArr);
+  let corporateArray = [
+    "WEBSITE DEVELOPMENT",
+    "E-COMMERCE WEBSITE DEVELOPMENT",
+    "ANGULARJS DEVELOPMENT SERVICES",
+    "OUR LIVE PROJECTS",
+    "OUR PLACED STUDENTS",
+  ];
+
+  footer(courseArr, QuestionsArray, corporateArray);
 }
 
 footerArray();
