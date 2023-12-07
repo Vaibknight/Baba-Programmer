@@ -1,64 +1,63 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-	    font-family: sans-serif;
+  font-family: sans-serif;
 }
 
 .text-center {
-	text-align: center;
+  text-align: center;
 }
 
 .text-left {
-	text-align: left;
+  text-align: left;
 }
 
 .text-none {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .list-none {
-	list-style-type: none;
+  list-style-type: none;
 }
 
-
 .container-90 {
-	margin: 0 auto;
-	width: 90%;
+  margin: 0 auto;
+  width: 90%;
 }
 
 .container-80 {
-	margin: 0 auto;
-	width: 80%;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .grid-3 {
-	display: grid;
-    grid-template-columns: auto auto auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
 .grid-4 {
-	display: grid;
-    grid-template-columns: auto auto auto auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
 }
 
 .display-flex {
-	display: flex;
+  display: flex;
 }
 
 .white {
-	color: white;
+  color: white;
 }
 
 .padding-tb {
-	padding: 20px 0px;
+  padding: 20px 0px;
 }
 
 .fs-20 {
-	font-size: 20px !important;
+  font-size: 20px !important;
 }
 
 .dropdown {
@@ -71,7 +70,7 @@ body {
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -82,33 +81,44 @@ body {
   display: block;
 }
 
-.dropdown:hover .dropdown-content {display: block;}
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
 .img {
-	width: 100%;
-	display: block;
+  width: 100%;
+  display: block;
 }
 
 .margin-tb {
-
-	margin: 20px 0px;
+  margin: 20px 0px;
 }
 
 .course-list li {
-	margin: 20px 0px;
-	font-size: 20px;
+  margin: 20px 0px;
+  font-size: 20px;
 }
 
 .bg-white {
-	background-color: #fafafa;
+  background-color: #fafafa;
 }
 
 .border-bottom {
-	border-bottom: 3px solid #1a0d60;
+  border-bottom: 3px solid #1a0d60;
 }
 
 .text-blue {
-	color: #3a7cce;
+  color: #3a7cce;
 }
 
+footer {
+  background-color: #022d5d;
+  color: white;
+}
+
+footer li {
+  margin: 20px 0px;
+}

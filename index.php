@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Home</title>
 </head>
 <body>
@@ -231,35 +232,35 @@
 
 		<section></section>
 
-		<footer>
-			<div>
-				<div class="grid-4">
+		<footer class="">
+			<div class="container-80">
+				<div class="grid-4 padding-tb">
 					<div>
-						<p>COURSES</p>
+						<h3>COURSES</h3>
 						<ul id="courses">
 							
 						</ul>
 					</div>
 					<div>
-						<p>INTERVIEW QUESTIONS</p>
+						<h3>INTERVIEW QUESTIONS</h3>
 						<ul id="questions">
 							
 						</ul>
 					</div>
 					<div>
-						<p>CORPORATE SERVICES</p>
+						<h3>CORPORATE SERVICES</p>
 						<ul id="corporate">
 							
 						</ul>
 					</div>
 					<div>
-						<p>OFFICE ADDRESS</p>
+						<h3>OFFICE ADDRESS</h3>
 						<ul id="office">
 							<li>
 								<a>CONTACT US</a>
 							</li>
 							<li>
-							<i class="material-icons">location_on</i>
+								<i class="material-icons" style="    font-size: 15px;">location_on</i>
 								<a> GANGA NAGAR SECTOR-2,NEAR <br> SHIV MANDIR, MANGLA CHOWK , <br> BILASPUR-495001, CHHATTISGARH</a>
 							</li>
 							<li>
@@ -276,10 +277,22 @@
 						
 						</li>
 						<li>
-						<div class="display-flex ">
-							<i class="material-icons fs-20">call</i>
-							<p>  +91-77 52 49 40 36 </p>
+							<div class="display-flex ">
+								<i class="material-icons fs-20">call</i>
+								<p>  +91-77 52 49 40 36 </p>
+							</div>
+						</li>
+						<li>
+						<div class="display-flex white" >
+							<i class="material-icons fs-20">email</i>
+							<p>  babaprogramer021@gmail.com</p>
 						</div>
+						</li>
+						<li>
+							<i class="fa fa-globe"></i>
+						</li>
+						<li>
+							WWW.BABAPROGRAMMER.COM
 						</li>
 						</ul>
 					</div>
