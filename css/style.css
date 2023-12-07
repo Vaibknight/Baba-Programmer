@@ -1,0 +1,114 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	    font-family: sans-serif;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-none {
+	text-decoration: none;
+}
+
+.list-none {
+	list-style-type: none;
+}
+
+
+.container-90 {
+	margin: 0 auto;
+	width: 90%;
+}
+
+.container-80 {
+	margin: 0 auto;
+	width: 80%;
+}
+
+.grid-3 {
+	display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-4 {
+	display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.display-flex {
+	display: flex;
+}
+
+.white {
+	color: white;
+}
+
+.padding-tb {
+	padding: 20px 0px;
+}
+
+.fs-20 {
+	font-size: 20px !important;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown-content a:hover {background-color: #ddd;}
+
+.img {
+	width: 100%;
+	display: block;
+}
+
+.margin-tb {
+
+	margin: 20px 0px;
+}
+
+.course-list li {
+	margin: 20px 0px;
+	font-size: 20px;
+}
+
+.bg-white {
+	background-color: #fafafa;
+}
+
+.border-bottom {
+	border-bottom: 3px solid #1a0d60;
+}
+
+.text-blue {
+	color: #3a7cce;
+}
+
