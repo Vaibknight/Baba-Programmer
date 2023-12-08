@@ -1,3 +1,108 @@
+// Footer
+
+// console.log(courseArr);
+
+function footer(coursList, questionList, corporateList, courseLinkList) {
+  console.log(coursList);
+  console.log(courseLinkList);
+  for (var i in coursList) {
+    // console.log(courseArr[i]);
+
+    courses.innerHTML += `
+		  <li>
+	  		<a href="${courseLinkList[i]}" class="text-none white">${coursList[i]}</a>
+		  </li>
+		`;
+  }
+
+  for (var i in questionList) {
+    questions.innerHTML += `
+		<li>
+			<a>${questionList[i]}</a>
+		</li>
+	`;
+  }
+
+  for (var i in corporateList) {
+    corporate.innerHTML += `
+	<li>
+		<a>${corporateList[i]}</a>
+	</li>
+`;
+  }
+}
+
+function footerArray() {
+  let courseArr = [
+    "HTML AND HTML5",
+    "CSS AND CSS3",
+    "BOOTSTRAP4",
+    "JAVASCRIPT",
+    "JQUERY",
+    "AJAX",
+    "ANGULARJS",
+    "REACTJS",
+    "JSON",
+    "C AND C++",
+    "JAVA",
+    "PHP AND MYSQL",
+    "PYTHON",
+    "SEO",
+    "DIGITAL MARKETING",
+    "DJANGO",
+    "LARAVEL",
+  ];
+
+  let courseLink = [
+    "HTML-course-in-bilaspur-chhattisgarh.php",
+    "CSS-course-in-bilaspur-chhattisgarh.php",
+    "bootstrap-course-in-bilaspur-chhattisgarh.php",
+    "javascript-course-in-bilaspur-chhattisgarh.php",
+    "jquery-course-in-bilaspur-chhattisgarh.php",
+    "ajax-course-in-bilaspur-chhattisgarh.php",
+    "angularjs-course-in-bilaspur-chhattisgarh.php",
+    "reactjs-course-in-bilaspur-chhattisgarh.php",
+    "json-course-in-bilaspur-chhattisgarh.php",
+    "c++-course-in-bilaspur-chhattisgarh.php",
+    "java-course-in-bilaspur-chhattisgarh.php",
+    "php-and-mysql-course-in-bilaspur-chhattisgarh.php",
+    "python-course-in-bilaspur-chhattisgarh.php",
+    "seo-course-in-bilaspur-chhattisgarh.php",
+    "digital-marketing-course-in-bilaspur-chhattisgarh.php",
+    "django-course-in-bilaspur-chhattisgarh.php",
+    "laravel-course-in-bilaspur-chhattisgarh.php",
+  ];
+
+  let QuestionsArray = [
+    "HTML5 AND CSS3",
+    "JAVASCRIPT",
+    "JQUERY AND AJAX",
+    "ANGULARJS",
+    "REACT",
+    "JSON",
+    "C && C++",
+    "JAVA",
+    "PHP && MYSQL",
+    "PYTHON",
+    "SEO",
+    "DIGITAL MARKETING",
+    "DJANGO",
+    "LARAVEL",
+  ];
+
+  let corporateArray = [
+    "WEBSITE DEVELOPMENT",
+    "E-COMMERCE WEBSITE DEVELOPMENT",
+    "ANGULARJS DEVELOPMENT SERVICES",
+    "OUR LIVE PROJECTS",
+    "OUR PLACED STUDENTS",
+  ];
+
+  footer(courseArr, QuestionsArray, corporateArray, courseLink);
+}
+
+footerArray();
+
 // Courses List
 var proCourse = document.querySelector(".proCourse");
 let arr = [
@@ -103,88 +208,3 @@ for (var i in arr) {
 			
 		`;
 }
-
-// Footer
-
-// console.log(courseArr);
-
-function footer(coursList, questionList, corporateList) {
-  console.log(questionList);
-  console.log(corporateList);
-  for (var i in coursList) {
-    // console.log(courseArr[i]);
-
-    courses.innerHTML += `
-		  <li>
-	  		<a>${coursList[i]}</a>
-		  </li>
-		`;
-  }
-
-  for (var i in questionList) {
-    questions.innerHTML += `
-		<li>
-			<a>${questionList[i]}</a>
-		</li>
-	`;
-  }
-
-  for (var i in corporateList) {
-    corporate.innerHTML += `
-	<li>
-		<a>${corporateList[i]}</a>
-	</li>
-`;
-  }
-}
-
-function footerArray() {
-  let courseArr = [
-    "HTML AND HTML5",
-    "CSS AND CSS3",
-    "BOOTSTRAP4",
-    "JAVASCRIPT",
-    "JQUERY",
-    "AJAX",
-    "ANGULARJS",
-    "REACTJS",
-    "JSON",
-    "C AND C++",
-    "JAVA",
-    "PHP AND MYSQL",
-    "PYTHON",
-    "SEO",
-    "DIGITAL MARKETING",
-    "DJANGO",
-    "LARAVEL",
-  ];
-
-  let QuestionsArray = [
-    "HTML5 AND CSS3",
-    "JAVASCRIPT",
-    "JQUERY AND AJAX",
-    "ANGULARJS",
-    "REACT",
-    "JSON",
-    "C && C++",
-    "JAVA",
-    "PHP && MYSQL",
-    "PYTHON",
-    "SEO",
-    "DIGITAL MARKETING",
-    "DJANGO",
-    "LARAVEL",
-  ];
-
-  let corporateArray = [
-    "WEBSITE DEVELOPMENT",
-    "E-COMMERCE WEBSITE DEVELOPMENT",
-    "ANGULARJS DEVELOPMENT SERVICES",
-    "OUR LIVE PROJECTS",
-    "OUR PLACED STUDENTS",
-  ];
-
-  footer(courseArr, QuestionsArray, corporateArray);
-}
-
-footerArray();

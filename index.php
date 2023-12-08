@@ -10,93 +10,13 @@
 </head>
 <body>
 	<main>
-		<header>
-			<div style="    background-color: #022d5d;" class="padding-tb">
-				<div class="grid-3">
-					<div class="text-center white">
-						<h2> Baba Programmer</h2>
-					</div>
-					<div style="    margin: 4px 0px;">
-						<div class="grid-4 container-90">
-						<div class="display-flex white">
-							<i class="material-icons  fs-20">call</i>
-							<p> +91-83 19 63 60 62 </p>
-						</div>
-						<div class="display-flex white">
-							<i class="material-icons fs-20">call</i>
-							<p> +91-96 91 12 42 51 </p>
-						</div>
-						<div class="display-flex white">
-							<i class="material-icons fs-20">call</i>
-							<p>  +91-77 52 49 40 36 </p>
-						</div>
-						<div class="display-flex white" >
-							<i class="material-icons fs-20">email</i>
-							<p>  babaprogramer021@gmail.com</p>
-						</div>
-					</div>
-					</div>
-					
-				</div>
-			</div>
-		</header>
 
-		<nav>
-			<div style="box-shadow:0 -1px 0px 0 rgba(0, 0, 0, 0.2), 0 5px 17px 0 rgba(0, 0, 0, 0.19);" class="padding-tb">
-				<div class="grid-3">
-					<div class="container-80">
-						<div class="dropdown">
-							<a>Programming Languages</a>
-							<div class="dropdown-content">
-							    <a href="#">C & C++ Programming</a>
-							    <a href="#">Python Programming</a>
-							    <a href="#">Data Science</a>
-							    <a href="#">Machine Learning</a>
-							    <a href="#">Java Programming</a>
-							    <a href="#">PHP Programming</a>
-							    <a href="#">MYSQL Programming</a>
-							    <a href="#">PHP & MYSQL Programming</a>
-							</div>
-						</div>
-					</div>
-					<div class="container-80">
-						<div class="dropdown">
-							<a>Web Technologies</a>
-							<div class="dropdown-content">
-							    <a href="#">Full Stack Web Development</a>
-							    <a href="#">Front-End Development</a>
-							    <a href="#">UI Development</a>
-							    <a href="#">Back-End Development</a>
-							    <a href="#">SEO Development</a>
-							    <a href="#">Digital Marketing Course</a>
-							    <a href="#">Python & Flask</a>
-							</div>
-						</div>
-					</div>
-					<div class="container-80">
-						<div class="dropdown">
-							<a>Web Programming</a>
-							<div class="dropdown-content">
-							    <a href="#">HTML4 & HTML5</a>
-							    <a href="#">CSS & CSS3</a>
-							    <a href="#">Bootstrap</a>
-							    <a href="#">JavaScript course</a>
-							    <a href="#">JQuery</a>
-							    <a href="#">ReactJS</a>
-							    <a href="#">AngularJS</a>
-							    <a href="#">SaSS</a>
-							    <a href="#">NextJS</a>
-							    <a href="#">JSON</a>
-							    <a href="#">API</a>
-							    <a href="#">AJAX</a>
-							    <a href="#">Digital Marketing </a>
-							    <a href="#">Java Programming</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</nav>
+		<?php 
+		
+			include('include/header.php');
+			include('include/nav.php');
+		?>
+
 		<section>
 			<div>
 				<div class="margin-tb">
@@ -232,73 +152,10 @@
 
 		<section></section>
 
-		<footer class="">
-			<div class="container-80">
-				<div class="grid-4 padding-tb">
-					<div>
-						<h3>COURSES</h3>
-						<ul id="courses">
-							
-						</ul>
-					</div>
-					<div>
-						<h3>INTERVIEW QUESTIONS</h3>
-						<ul id="questions">
-							
-						</ul>
-					</div>
-					<div>
-						<h3>CORPORATE SERVICES</p>
-						<ul id="corporate">
-							
-						</ul>
-					</div>
-					<div>
-						<h3>OFFICE ADDRESS</h3>
-						<ul id="office">
-							<li>
-								<a>CONTACT US</a>
-							</li>
-							<li>
-								<i class="material-icons" style="    font-size: 15px;">location_on</i>
-								<a> GANGA NAGAR SECTOR-2,NEAR <br> SHIV MANDIR, MANGLA CHOWK , <br> BILASPUR-495001, CHHATTISGARH</a>
-							</li>
-							<li>
-							<div class="display-flex ">
-								<i class="material-icons  fs-20">call</i>
-								<p> +91-83 19 63 60 62 </p>
-							</div>
-						</li>
-						<li>
-						<div class="display-flex ">
-							<i class="material-icons fs-20">call</i>
-							<p> +91-96 91 12 42 51 </p>
-						</div>
-						
-						</li>
-						<li>
-							<div class="display-flex ">
-								<i class="material-icons fs-20">call</i>
-								<p>  +91-77 52 49 40 36 </p>
-							</div>
-						</li>
-						<li>
-						<div class="display-flex white" >
-							<i class="material-icons fs-20">email</i>
-							<p>  babaprogramer021@gmail.com</p>
-						</div>
-						</li>
-						<li>
-							<i class="fa fa-globe"></i>
-						</li>
-						<li>
-							WWW.BABAPROGRAMMER.COM
-						</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</footer>
+		<?php 
+		
+			include('include/footer.php');
+		?>
 	</main>
 
 	<script src="js/script.js"></script>

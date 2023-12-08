@@ -6,6 +6,8 @@
 
 body {
   font-family: sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .text-center {
@@ -102,6 +104,12 @@ body {
   font-size: 20px;
 }
 
+.html-list li {
+  margin: 10px 0px;
+  font-size: 15px;
+  color: #000000bd;
+}
+
 .bg-white {
   background-color: #fafafa;
 }
@@ -121,4 +129,25 @@ footer {
 
 footer li {
   margin: 20px 0px;
+  cursor: pointer;
+}
+
+.dropdown > a {
+  transition: all 0.3s;
+}
+
+.dropdown > a:hover {
+  color: #022d5d;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0px 0px 4px 1px #022d5d;
+  background-color: white;
+}
+
+.fs-30 {
+  font-size: 30px;
 }
