@@ -1,6 +1,8 @@
 <nav class="sticky">
 			<div style="box-shadow:0 -1px 0px 0 rgba(0, 0, 0, 0.2), 0 5px 17px 0 rgba(0, 0, 0, 0.19);" class="padding-tb">
-				<div class="grid-3">
+			<i class="fa fa-navicon navicon display-none"></i>
+				<div class="grid-3" id="navbar">
+				
 					<div class="container-80">
 						<div class="dropdown">
 							<a>Programming Languages</a>
@@ -19,6 +21,7 @@
 					<div class="container-80">
 						<div class="dropdown">
 							<a>Web Technologies</a>
+							
 							<div class="dropdown-content">
 							    <a href="#">Full Stack Web Development</a>
 							    <a href="#">Front-End Development</a>
@@ -33,6 +36,7 @@
 					<div class="container-80">
 						<div class="dropdown">
 							<a>Web Programming</a>
+							
 							<div class="dropdown-content">
 							    <a href="HTML-course-in-bilaspur-chhattisgarh.php">HTML4 & HTML5</a>
 							    <a href="CSS-course-in-bilaspur-chhattisgarh.php">CSS & CSS3</a>

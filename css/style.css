@@ -22,6 +22,10 @@ body {
   text-decoration: none;
 }
 
+.display-none {
+  display: none !important;
+}
+
 .list-none {
   list-style-type: none;
 }
@@ -56,6 +60,10 @@ body {
 
 .padding-tb {
   padding: 20px 0px;
+}
+
+.padding-lr {
+  padding: 0px 10px;
 }
 
 .fs-20 {
@@ -99,6 +107,10 @@ body {
   margin: 20px 0px;
 }
 
+.margin-tb-10 {
+  margin: 10px 0px;
+}
+
 .course-list li {
   margin: 20px 0px;
   font-size: 20px;
@@ -120,6 +132,10 @@ body {
 
 .text-blue {
   color: #3a7cce;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 footer {
@@ -150,4 +166,80 @@ footer li {
 
 .fs-30 {
   font-size: 30px;
+}
+
+.logo {
+  max-width: 100%;
+  display: block;
+}
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  left: -2px;
+  top: -3px;
+}
+/* MediaQuery */
+
+@media (max-width: 576px) {
+  .grid-3 {
+    display: block;
+  }
+
+  .grid-4 {
+    display: block;
+  }
+
+  .grid-4 div {
+    margin: 10px 0px;
+    justify-content: center;
+  }
+
+  .navicon {
+    display: block !important;
+    text-align: right;
+    margin: 0px 20px;
+  }
+
+  #navbar {
+    display: none;
+  }
+
+  .dropdown > a {
+    margin: 0px 10px;
+  }
+
+  .dropdown {
+    margin: 20px 0px !important;
+  }
+
+  .sticky .container-80 {
+    border-bottom: 1px solid #80808038;
+  }
 }

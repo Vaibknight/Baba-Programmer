@@ -1,10 +1,24 @@
+// Open Navbar
+
+var navicon = document.querySelector(".navicon");
+console.log(navbar);
+
+navicon.onclick = function () {
+  if (navbar.style.display == "block") {
+    navbar.style.display = "none";
+    navbar.style.transition = "all 0.3s";
+  } else {
+    navbar.style.display = "block";
+  }
+};
+
 // Footer
 
 // console.log(courseArr);
 
 function footer(coursList, questionList, corporateList, courseLinkList) {
-  console.log(coursList);
-  console.log(courseLinkList);
+  // console.log(coursList);
+  // console.log(courseLinkList);
   for (var i in coursList) {
     // console.log(courseArr[i]);
 

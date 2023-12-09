@@ -2,9 +2,14 @@
 			<div style="    background-color: #022d5d;" class="padding-tb">
 				<div class="grid-3">
 					<div class="text-center white">
-						<h2> Baba Programmer</h2>
+
+					<a href="index.php" class="text-none display-flex justify-center">
+						<img src="image/logo.png" class="logo">
+					<h2 class="text-none white margin-tb-10"> Baba Programmer</h2>
+					</a>
+						
 					</div>
-					<div style="    margin: 4px 0px;">
+					<div  style="margin: 15px 0px;">
 						<div class="grid-4 container-90">
 						<div class="display-flex white">
 							<i class="material-icons  fs-20">call</i>

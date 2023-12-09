@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<title>CSS Course in Bilaspur Chhattisgarh</title>
+	<title>JQuery Course in Bilaspur Chhattisgarh</title>
 </head>
 <body>
 	<main>
@@ -25,17 +25,18 @@
 						</a>
 					
 					</li>
-					<li>CSS Course</li>
+					<li>JQuery Course</li>
 				</ul>
-			</div>
+			</div>	
+
+		
 
 		
 		<section class="html-list">
 			<div class="container-80">
 				<div class="margin-tb">
-                    <p class="fs-30">Syllabus of CSS</p>
-                    <p class="fs-30 margin-tb">CSS && CSS3</p>
-					<ul id="cssCourse">
+                    <p class="fs-30">Syllabus of Jquery3.3.1</p>
+					<ul id="jqueryCourse">
 						
 					</ul>
 				</div>
@@ -49,8 +50,8 @@
 			include('include/footer.php');
 		?>
 	</main>
-    <script src="js/css.js"></script>
+
+    <script src="js/jquery.js"></script>
 	<script src="js/script.js"></script>
-	
 </body>
 </html>
