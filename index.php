@@ -12,11 +12,53 @@
 	<main>
 
 		<?php 
-		
+			include("db.php");
 			include('include/header.php');
 			include('include/nav.php');
 		?>
 
+
+		<?php 
+			$visitor_ip = $_SERVER['REMOTE_ADDR'];
+			// $visitor_ip = "72.72.72.72";
+
+		    echo($visitor_ip);
+
+			//checking if user is unique
+			$count = "select * from counts where count = '$visitor_ip'";
+			$printCount = mysqli_query($db,$count);
+
+			if(!$printCount){
+				die('Retrieve query error'.$count);
+
+			   }
+
+			$totalVisitors = mysqli_num_rows($printCount);
+			if($totalVisitors < 1){
+				$insert = "insert into counts(count) values('$visitor_ip')";
+
+				$printCount = mysqli_query($db,$insert);
+				if($insert){
+					echo("Successfully Inserted");
+				}
+			
+
+			}
+
+
+			// Retrieve existing user
+			$count = "select * from counts";
+			$printCount = mysqli_query($db,$count);
+			if(!$printCount){
+				die('Retrieve query error'.$count);
+
+			}
+
+			$totalVisitors = mysqli_num_rows($printCount);
+
+		?>
+
+		<h1> <?php echo("$totalVisitors");?></h1>
 		<section>
 			<div>
 				<div class="margin-tb">
