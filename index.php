@@ -58,6 +58,8 @@
 
 		?>
 
+		
+
 		<h1> <?php echo("$totalVisitors");?></h1>
 		<section>
 			<div>

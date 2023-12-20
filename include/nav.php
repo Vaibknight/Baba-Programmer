@@ -1,7 +1,7 @@
 <nav class="sticky">
 			<div style="box-shadow:0 -1px 0px 0 rgba(0, 0, 0, 0.2), 0 5px 17px 0 rgba(0, 0, 0, 0.19);" class="padding-tb">
 			<i class="fa fa-navicon navicon display-none"></i>
-				<div class="grid-3" id="navbar">
+				<div class="grid-5" id="navbar">
 				
 					<div class="container-80">
 						<div class="dropdown">
@@ -9,13 +9,18 @@
 							<div class="dropdown-content">
 							    <a href="c++-course-in-bilaspur-chhattisgarh.php">C & C++ Programming</a>
 							    <a href="python-course-in-bilaspur-chhattisgarh.php">Python Programming</a>
-							    <a href="#">Data Science</a>
-							    <a href="#">Machine Learning</a>
+							    <a href="data-science-course-in-bilaspur-chhattisgarh.php">Data Science</a>
+							    <a href="machine-learning-course-in-bilaspur-chhattisgarh.php">Machine Learning</a>
 							    <a href="java-course-in-bilaspur-chhattisgarh.php">Java Programming</a>
-							    <a href="#">PHP Programming</a>
-							    <a href="#">MYSQL Programming</a>
+							    <a href="php-programming-language-in-bilaspur-chhattisgarh.php">PHP Programming</a>
+							    <a href="mysql-course-in-bilaspur-chhattisgarh.php">MYSQL Programming</a>
 							    <a href="php-and-mysql-course-in-bilaspur-chhattisgarh.php">PHP & MYSQL Programming</a>
 							</div>
+						</div>
+					</div>
+					<div class="">
+						<div class="dropdown">
+							<a href="java-course-in-bilaspur-chhattisgarh.php" class="black text-none">Java Programming</a>
 						</div>
 					</div>
 					<div class="container-80">
@@ -31,6 +36,11 @@
 							    <a href="#">Digital Marketing Course</a>
 							    <a href="#">Python & Flask</a>
 							</div>
+						</div>
+					</div>
+					<div class="">
+						<div class="dropdown">
+							<a href="c++-course-in-bilaspur-chhattisgarh.php" class="black text-none">C++ Programming</a>
 						</div>
 					</div>
 					<div class="container-80">

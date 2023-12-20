@@ -50,12 +50,21 @@ body {
   grid-template-columns: auto auto auto auto;
 }
 
+.grid-5 {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+
 .display-flex {
   display: flex;
 }
 
 .white {
   color: white;
+}
+
+.black {
+  color: black;
 }
 
 .padding-tb {

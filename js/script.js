@@ -122,82 +122,82 @@ var proCourse = document.querySelector(".proCourse");
 let arr = [
   {
     title: "Php and Mysql Course",
-    img: "image/1.jpg",
+    img: "image/php.jpg",
     desc: "Learn to use PHP professionally, learning both Core PHP and Advance PHP.",
   },
   {
     title: "Python Course",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS94gXDs1ZUOskVCs_hd9zgEd3yJKKI5dWn-g&usqp=CAU",
+    img: "image/python.jpg",
     desc: "Learn to use Python professionally, learning both Python 2 and Python 3!",
   },
   {
     title: "Java Course",
-    img: "https://online.crbtech.in/wp-content/uploads/2019/03/Core-Java-Pro.jpg",
+    img: "image/java.jpg",
     desc: "Learn Java In This Course And Become a Computer Programmer.",
   },
   {
     title: "C and C++ Course",
-    img: "https://www.itrainu.in/wp-content/uploads/2022/01/c-c-img.jpg",
+    img: "image/C.jpg",
     desc: "Learn C and C++ In This Course And Become a Computer Programmer.",
   },
   {
     title: "HTML and HTML5 Course",
-    img: "https://res.cloudinary.com/go1/image/upload/q_60,h_256/v1558665969/acxk7reamabpmadi3tep.png",
+    img: "image/Html5.jpg",
     desc: "Learn to use Html professionally, learning both HTML and HTML5.",
   },
   {
     title: "Css and Css3",
-    img: "https://colorlib.com/wp/wp-content/uploads/sites/2/creative-css3-tutorials.jpg",
+    img: "image/css.jpg",
     desc: "Learn to use Css professionally, learning both Css and Css 3!",
   },
   {
     title: "Bootstrap",
-    img: "https://www.etatvasoft.com/insights/wp-content/uploads/2017/02/b-thumb-img9.jpg",
+    img: "image/bootstrap.jpg",
     desc: "Learn to use Bootstrap professionally, learning both Bootstrap3 and Bootstrap4",
   },
   {
     title: "JavaScript",
-    img: "https://miro.medium.com/v2/resize:fit:1200/1*LyZcwuLWv2FArOumCxobpA.png",
+    img: "image/javascript.jpg",
     desc: "Learn to use Javascript professionally, learning both Javascript and Javascript6",
   },
   {
     title: "Jquery Course",
-    img: "https://www.zdnet.com/a/img/resize/1353418965b69841eba1da18244e9e012b8afea5/2019/04/21/9d791bf2-9b20-476a-bba6-201e622d2a1f/jquery-logo-blue.png?auto=webp&fit=crop&height=675&width=1200",
+    img: "image/jquery.jpg",
     desc: "Learn to use Jquery professionally, learning both Jquery3.0.0 and Jquery3.3.1.",
   },
   {
     title: "AngularJs",
-    img: "https://miro.medium.com/v2/resize:fit:1400/1*R1mfXLP9edcArZXwmGbGag.jpeg",
+    img: "image/angularjs.jpg",
     desc: "Learn to use AngularJs professionally, learning AngularJs.Learn to use ReactJs professionally, learning ReactJs.",
   },
   {
     title: "ReactJs",
-    img: "https://www.unicorn.dev/wp-content/uploads/2023/01/react.png",
+    img: "image/reactjs.jpg",
     desc: "Learn to use ReactJs professionally, learning ReactJs.",
   },
   {
     title: "Json",
-    img: "https://www.crio.do/blog/content/images/2021/06/What-is-JSON.png",
+    img: "image/json.jpg",
     desc: "Learn to use Json professionally, learning Json .",
   },
   {
     title: "Digital Marketing",
-    img: "https://www.icscareergps.com/blog/wp-content/uploads/2023/11/digital-marketing-benefits.jpg",
+    img: "image/digital-marketing.jpg",
     desc: "Learn to use Digital Marketing professionally, learning SEO,SMM,PPC,Email Marketing",
   },
   {
     title: "Django",
-    img: "https://www.yarddiant.com/images/best-front-end-framework-for-django.jpg",
+    img: "image/django.jpg",
     desc: "Learn to use Django(Python framework) professionally.",
   },
   {
     title: "Laravel framework",
-    img: "https://picperf.io/https://laravelnews.s3.amazonaws.com/images/laravel-featured.png",
+    img: "image/laravel.jpg",
     desc: "Learn to use Laravel Framework professionally.Laravel is a powerful MVC PHP framework.",
   },
   {
     title: "SEO",
-    img: "https://www.oberlo.com/media/1603954182-seo-article-header.png",
+    img: "image/seo.jpg",
     desc: "Learn to use SEO professionally, Start your SEO Business.",
   },
 ];
