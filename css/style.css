@@ -26,6 +26,10 @@ body {
   display: none !important;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .list-none {
   list-style-type: none;
 }
@@ -213,6 +217,11 @@ ul.breadcrumb li a:hover {
   position: absolute;
   left: -2px;
   top: -3px;
+}
+
+.border-course {
+  border: 1px solid #00000021;
+  padding: 15px 20px;
 }
 /* MediaQuery */
 

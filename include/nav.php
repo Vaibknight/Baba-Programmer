@@ -55,9 +55,9 @@
 							    <a href="jquery-course-in-bilaspur-chhattisgarh.php">JQuery</a>
 							    <a href="reactjs-course-in-bilaspur-chhattisgarh.php">ReactJS</a>
 							    <a href="angularjs-course-in-bilaspur-chhattisgarh.php">AngularJS</a>
-							    <a href="#">SaSS</a>
-							    <a href="#">NextJS</a>
-							    <a href="#">JSON</a>
+							    <a href="sass-course-in-bilaspur-chhattisgarh.php">SaSS</a>
+							    <a href="nextjs-course-in-bilaspur-chhattisgarh.php">NextJS</a>
+							    <a href="json-course-in-bilaspur-chhattisgarh.php">JSON</a>
 							    <a href="#">API</a>
 							    <a href="ajax-course-in-bilaspur-chhattisgarh.php">AJAX</a>
 							    <a href="digital-marketing-course-in-bilaspur-chhattisgarh.php">Digital Marketing </a>
