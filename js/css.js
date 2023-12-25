@@ -139,7 +139,9 @@ console.log(cssCourse);
 for (var i in cssArray) {
   //   console.log(cssArray[i]);
   cssCourse.innerHTML += `
-    <li>
+    <li class="border-course list-none">
+    <i class="fa fa-book" style="color:#022d5d;"></i>
+        &nbsp;&nbsp;
         ${cssArray[i]}
     </li>
   `;

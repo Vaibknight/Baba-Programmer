@@ -1,4 +1,4 @@
-let json = [
+let jsonArray = [
   "JSON Intro",
   "JSON Syntax",
   "JSON vs XML",
@@ -13,4 +13,18 @@ let json = [
   "JSON JSONP",
 ];
 
-console.log(json);
+console.log(jsonArray);
+
+var jsonCourse = document.getElementById("jsonCourse");
+console.log(jsonCourse);
+
+for (var i in jsonArray) {
+  jsonCourse.innerHTML += `
+        <li class="border-course list-none">
+        
+        <i class="fa fa-book" style="color:#022d5d;"></i>
+        &nbsp;&nbsp;
+            <a>${jsonArray[i]}</a>
+        </li>
+    `;
+}

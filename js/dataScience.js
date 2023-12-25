@@ -25,7 +25,9 @@ console.log(dataScienceCourse);
 
 for (var i in dataScienceArray) {
   dataScienceCourse.innerHTML += `
-        <li>
+        <li class="border-course list-none">
+        <i class="fa fa-book" style="color:#022d5d;"></i>
+        &nbsp;&nbsp;
             <a>${dataScienceArray[i]}</a>
         </li>
     `;

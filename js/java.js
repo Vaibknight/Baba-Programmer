@@ -24,7 +24,9 @@ console.log(javaCourse);
 
 for (var i in javaArray) {
   javaCourse.innerHTML += `
-        <li>
+        <li class="border-course list-none">
+        <i class="fa fa-book" style="color:#022d5d;"></i>
+        &nbsp;&nbsp;
             <a>${javaArray[i]}</a>
         </li>
     `;

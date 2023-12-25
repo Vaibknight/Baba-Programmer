@@ -65,7 +65,9 @@ console.log(jqueryCourse);
 
 for (var i in jqueryArray) {
   jqueryCourse.innerHTML += `
-        <li>
+        <li class="border-course list-none">
+        <i class="fa fa-book" style="color:#022d5d;"></i>
+        &nbsp;&nbsp;
             <a>${jqueryArray[i]}</a>
         </li>
     `;

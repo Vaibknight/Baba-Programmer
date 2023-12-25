@@ -97,7 +97,9 @@ console.log(javaScriptCourse);
 
 for (var i in javaScriptArray) {
   javaScriptCourse.innerHTML += `
-        <li>
+        <li class="border-course list-none">
+        <i class="fa fa-book" style="color:#022d5d;"></i>
+        &nbsp;&nbsp;
             <a>${javaScriptArray[i]}</a>
         </li>
     `;

@@ -1,4 +1,13 @@
-let mysqlArray = [
+let phpSqlArray = [
+  "Introduction to PHP",
+  "Decisions and loop",
+  "Function",
+  "Array",
+  "Handling Html Form with Php",
+  "Working with file and Directories",
+  ". Session and Cookie",
+  "Database Connectivity with MySql",
+  "Exception Handling",
   "Manage Databases",
   "MySQL Table Types",
   "MySQL Data Types",
@@ -18,17 +27,18 @@ let mysqlArray = [
   "MySQL Temporary Table",
 ];
 
-console.log(mysqlArray);
+console.log(phpSqlArray);
 
-var sqlCourse = document.getElementById("sqlCourse");
-console.log(sqlCourse);
+var phpSQlCourse = document.getElementById("phpSQlCourse");
+console.log(phpSQlCourse);
 
-for (var i in mysqlArray) {
-  sqlCourse.innerHTML += `
+for (var i in phpSqlArray) {
+  phpSQlCourse.innerHTML += `
         <li class="border-course list-none">
+        
         <i class="fa fa-book" style="color:#022d5d;"></i>
         &nbsp;&nbsp;
-            <a>${mysqlArray[i]}</a>
+            <a>${phpSqlArray[i]}</a>
         </li>
     `;
 }

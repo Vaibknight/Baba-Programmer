@@ -135,7 +135,9 @@ console.log(bootstrapCourse);
 for (var i in bootstrapArray) {
   bootstrapCourse.innerHTML += `
     
-        <li>
+        <li class="border-course list-none">
+        <i class="fa fa-book" style="color:#022d5d;"></i>
+        &nbsp;&nbsp;
             <a>${bootstrapArray[i]}</a>
         </li>
     `;

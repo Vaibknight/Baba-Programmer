@@ -31,7 +31,9 @@ console.log(mlCourse);
 
 for (var i in mlArray) {
   mlCourse.innerHTML += `
-        <li>
+        <li class="border-course list-none">
+        <i class="fa fa-book" style="color:#022d5d;"></i>
+        &nbsp;&nbsp;
             <a>${mlArray[i]}</a>
         </li>
     `;
