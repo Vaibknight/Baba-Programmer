@@ -35,13 +35,13 @@ body {
 }
 
 .container-90 {
-  margin: 0 auto;
-  width: 90%;
+  margin: 0 auto !important;
+  width: 90% !important;
 }
 
 .container-80 {
-  margin: 0 auto;
-  width: 80%;
+  margin: 0 auto !important;
+  width: 80% !important;
 }
 
 .grid-3 {
@@ -223,6 +223,98 @@ ul.breadcrumb li a:hover {
   border: 1px solid #00000021;
   padding: 15px 20px;
 }
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.catalog {
+  background: #ef7215 !important;
+  min-height: 500px;
+  padding: 90px 0px;
+}
+
+.owl-item {
+  width: 128.906px;
+  margin-right: 10px;
+  background: powderblue;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 60%;
+}
+.form-group {
+  margin: 10px 0px;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 2px;
+}
+table {
+  border: 1px solid gray;
+  border-collapse: collapse;
+}
+table tr td,
+th {
+  border: 1px solid gray;
+  padding: 10px;
+}
+.text-01 {
+  box-shadow: 0px 0px 3px #2e365f;
+  margin: 10px 0px;
+  padding: 3px 1px;
+  border-radius: 2px;
+}
+.text-01 > h1 {
+  text-align: center;
+  font-size: 20px;
+}
+.text-01 > img {
+  display: block;
+  width: 100%;
+  height: 400px;
+}
+.text-01 > p {
+  padding: 3px;
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+
 /* MediaQuery */
 
 @media (max-width: 576px) {

@@ -1,17 +1,22 @@
-JS AJAX
-How AJAX Works
-AJAX Introduction
-AJAX-The XMLHttpRequest Object
-The XMLHttpRequest Object
-Create an XMLHttpRequest Object
-new XMLHttpRequest()
-abort()
-getAllResponseHeaders()
-getResponseHeader()
-open(method, url, async, user, psw)
-send()
-send(string)
-setRequestHeader()
-XMLHttpRequest Object Properties:
-onreadystatechange
-XMLHttpRequest Object Methods
+ Flask Framework Overview.
+Flask Framework Environment
+Flask Framework Hello World
+Flask Framework Routing
+Flask Framework Variable rules
+Flask Framework URL Building
+HTTP Method Flask Framework
+Flask Framework Templates
+Flask Framework Static Files
+Flask Framework Request Object
+Flask Framework Request.from Object
+Flask Framework Cookies
+Flask Framework Session Object
+Flask Framework Redirects & Errors
+Flask Framework Message Flashing
+Flask Framework File Uploading
+Flask Framework Extensions
+Flask Framework Mail
+Flask Framework WTF Extension
+Flask Framework SQLite
+Flask Framework SQL Alchemy
+Flask Framework Deployment

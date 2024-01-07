@@ -28,13 +28,13 @@
 							<a>Web Technologies</a>
 							
 							<div class="dropdown-content">
-							    <a href="#">Full Stack Web Development</a>
-							    <a href="#">Front-End Development</a>
-							    <a href="#">UI Development</a>
-							    <a href="#">Back-End Development</a>
-							    <a href="#">SEO Development</a>
-							    <a href="#">Digital Marketing Course</a>
-							    <a href="#">Python & Flask</a>
+							    <a href="full-stack-development-course-in-bilaspur-chhattisgarh.php">Full Stack Web Development</a>
+							    <a href="front-end-development-course-in-bilaspur-chhattisgarh.php">Front-End Development</a>
+							    <a href="ui-development-course-in-bilaspur-chhattisgarh.php">UI Development</a>
+							    <a href="back-end-development-course-in-bilaspur-chhattisgarh.php">Back-End Development</a>
+							    <a href="seo-development-course-in-bilaspur-chhattisgarh.php">SEO Development</a>
+							    <a href="digital-marketing-course-in-bilaspur-chhattisgarh.php">Digital Marketing Course</a>
+							    <a href="python-and-flask-course-in-bilaspur-chhattisgarh.php">Python & Flask</a>
 							</div>
 						</div>
 					</div>
