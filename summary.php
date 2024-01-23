@@ -1,5 +1,59 @@
 <?php 
+session_start();
 	 include('db.php');
+	 if(@$_SESSION['username']==""){
+	 	session_destroy();
+	 	echo '<script>
+	 		location.href="login.php"
+	 	</script>';
+	 }
+?>
+<html>
+	<head>
+		<title>
+			Web Page
+		</title>
+		
+		<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="css/style.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/back.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+		
+	</head>
+	<body>
+				<nav class="bg-white">
+	
+		      <div class="container-90">
+				 <ul class="menu row grid-3 center">
+			        <li  class="padding">
+			        	<a href="fees.php" class="display-flex padding hov">Fees Registration</a>
+			        </li>
+
+			        <li class="padding">
+			        	<a href="dasboard.php" class="display-flex padding hov">Dashboard</a>
+			        </li>
+
+			        <li class="padding">
+			        <a href="logout.php" class="display-flex padding hov">Logout</a>
+			        </li>
+				</ul>  
+		    </div>
+
+  		</nav>
+	
+
+
+
+		<!---end navbar--->
+
+		<br><br>
+
+
+<?php 
+	 
 	 
 	 if(isset($_GET['stuid']) && $_GET['stuid']!=''){
 			
@@ -14,7 +68,7 @@
 			
 			/*select data from database*/
 			?>
-			<table>
+			<table style="width:100%;">
 							<thead>
 								<tr>
 								
@@ -74,3 +128,5 @@
 		 die("Invalid details!");
 	 }
 ?>
+</body>
+</html>

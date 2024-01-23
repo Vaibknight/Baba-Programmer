@@ -1,6 +1,5 @@
 <?php
 	include("db.php");
-	error_reporting(0);
 ?>
 <!DOCTYPE html>
 <html>
@@ -13,7 +12,37 @@
 	<title>Edit Page</title>
 </head>
 <body>
-<div class="container-80" style="border:3px solid black;">
+
+		<!---start navbar---->
+
+	
+		<nav class="bg-white">
+	
+		      <div class="container-90">
+				 <ul class="menu row grid-3 center">
+			        <li  class="padding">
+			        	<a href="fees.php" class="display-flex padding hov">Fees Registration</a>
+			        </li>
+
+			        <li class="padding">
+			        	<a href="dasboard.php" class="display-flex padding hov">Dashboard</a>
+			        </li>
+
+			        <li class="padding">
+			        <a href="logout.php" class="display-flex padding hov">Logout</a>
+			        </li>
+				</ul>  
+		    </div>
+
+  		</nav>
+	
+
+
+
+		<!---end navbar--->
+
+		<br><br>
+<div class="container-90" style="border:3px solid black;">
 
 	
 	<?php
@@ -31,8 +60,7 @@
 				<label>Heading:</label></br>
 				 <input type="text" required value="<?php echo($row['heading']);?>" name="heading"></br></br>
 				 
-				 <label>Title:</label></br>
-				  <input type="text" required value="<?php echo($row['title']);?>" name="title"></br>
+				
 				  
 				  <label>Image:</label></br>
 				  <input type="file" value="<?php echo($row['image']);?>" name="images"></br></br>
@@ -41,7 +69,8 @@
 				  <input type="date" required value="<?php echo($row['date']);?>" name="date"></br></br>
 				  
 				  <label>Description:</label></br>
-				 <textarea name="description" required rows="10" cols="30" style="width:61%;">
+				 <textarea name="description" required rows="10" cols="30"				 textarea name="description" required rows="10" cols="30" style="width:96%; border: 2px solid rgb(15 4 4 / 80%); border-radius: 40px;">
+>
 				</textarea></br></br>
 				
 				<button type="submit" name="update" id="button">Update</button>
@@ -69,5 +98,61 @@
 		}
 	?>
 </div>	
+<!---edit for fees.php-->
+<?php
+$gett=$_GET['edite'];
+$selected="select * from fees_table  where id='$gett'";
+$queryy=mysqli_query($db,$selected);
+while($rows=mysqli_fetch_array($queryy)){
+
+
+
+
+?>
+<div class="container-90" style="border:3px solid black; background-color: wheat;">
+	
+		<br><br> 
+		<h2 class="h2"> Update Fees Details..!</h2>
+			<form  action="#" method="post" class="padding-10" style="margin-left: 16%;">
+					
+						<div>
+							<label>Name:</label><br><br> 
+							<input type="text" required name="fnamee" value="<?php echo($rows['fname']);?>" required  class="form-control from">
+						</div><br><br>
+						<div>
+							<label>Course:</label><br><br>
+							<input type="text" required name="coursee" required class="form-control from" value="<?php echo($rows['course']);?>">
+						</div>
+						<br><br>
+
+						<div>
+							<label>Fees:</label><br><br>
+							<input type="text" required name="feess"value="<?php echo($rows['fees']);?>" required class="form-control from">
+						</div><br><br>
+						
+						
+						<button type="submit" name="updated" class="button ml" >Update</button>
+		</form>
+		<?php }?>
+
+
+		<?php
+		if(isset($_POST['updated'])){
+			$name=$_POST['fnamee'];
+			$course=$_POST['coursee'];
+			$fees=$_POST['feess'];
+			$updated="update fees_table set fname='$name',course='$course',fees='$fees' where id='$gett' ";
+			$query=mysqli_query($db,$updated);
+			if($query){
+				header("location:fees.php");
+			}
+			else{
+				echo"not updated";
+			}
+		}
+
+		?>
+			
+</div>
 </body>
 </html>

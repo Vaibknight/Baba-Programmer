@@ -12,3 +12,15 @@ include("db.php");
 		echo("you are not deleted succesfully");
 	}
 ?>
+
+<?php
+$gett=$_GET['dele'];
+$quey="delete from fees_table where id='$gett'";
+$sqli=mysqli_query($db,$quey);
+if($sqli){
+	header("location:fees.php?success=deleted successfully");
+}
+else{
+	echo "you are not deleted succesfully";
+}
+?>

@@ -50,3 +50,17 @@ let htmlArray = [
 ];
 
 console.log(htmlArray);
+
+var htmlCourse = document.getElementById("htmlCourse");
+console.log(htmlCourse);
+
+for (var i in htmlArray) {
+  htmlCourse.innerHTML += `
+        <li class="border-course list-none">
+        
+        <i class="fa fa-book" style="color:#022d5d;"></i>
+        &nbsp;&nbsp;
+            <a>${htmlArray[i]}</a>
+        </li>
+    `;
+}

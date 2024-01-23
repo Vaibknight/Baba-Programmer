@@ -21,7 +21,7 @@ include("db.php");
 	
             <div class="input-box">
 				<label>Username:</label>
-				</br>
+				<br>
                 <input type="text" placeholder="Username" name="user"required style="border:2px solid #ffffff;color:white;">
                
             </div>

@@ -1,6 +1,13 @@
 <?php
 session_start();
 include("db.php");
+if(@$_SESSION['username']==""){
+	session_destroy();
+	echo '<script>
+		location.href="login.php"
+	</script>';
+
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -8,14 +15,35 @@ include("db.php");
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/back.css">
+	
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	
 	<title>blog</title>
 </head>
 <body>
 	<main>
+		<!---start navbar---->
+
+	
+		<nav class="bg-white">
+	
+		      <div class="container-90">
+				 <ul class="menu row grid-3 center">
+			        <li class="padding "><a href="fees.php" class="display-flex  padding hov">Fees Registration</a></li>
+			        <li class="padding"><a href="dasboard.php" class="display-flex   padding hov">Dashboard</a></li>
+			        <li class="padding"><a href="logout.php" class="display-flex padding hov">Logout</a></li>
+				</ul>  
+		    </div>
+
+  		</nav>
+	
+
+
+
+		<!---end navbar--->
+		<br><br>
 		<div class="container-80" style="border:3px solid black;">
-		<a href="fees.php">Fees Registration</a>
+		
 		<h2 class="h2">Fill in the Blanks!</h2>
 			<form action="" method="post" enctype="multipart/form-data" style="margin:33px 67px;">
 				 <div class="input-box">
@@ -25,8 +53,6 @@ include("db.php");
 					 <label>Heading:</label></br>
 				  <input type="text" required name="heading"></br></br>
 				  
-				  <label>Title:</label></br>
-				  <input type="text" required name="title"></br></br>
 				  
 				  <label>Image:</label></br>
 				  <input type="file" name="images"></br></br>
@@ -35,25 +61,27 @@ include("db.php");
 				  <input type="date" required name="date"></br></br>
 				  
 				  <label>Description:</label></br>
-				 <textarea name="description" required rows="10" cols="30" style="width:61%;">
+				 <textarea name="description" required rows="10" cols="30" style="width:96%; border: 2px solid rgb(15 4 4 / 80%); border-radius: 40px;">
+
+
 				</textarea></br></br>
 				
 				<button type="submit" name="submit" id="button">Submit</button>
 				
-				<button type="submit" name="submit" id="dasboard">
-					<a href="dasboard.php" class="text-none white">Dasboard</a>
-				</button>
+			
 				 </div>
 			</form>
 		</div>
+		<br><br>
+
 	</main>
 	<?php
 		if(isset($_POST['submit'])){
 			$head=$_POST['heading'];
-			$title=$_POST['title'];
 			$image_name=$_FILES['images']['name'];
 			$image_temp=$_FILES['images']['tmp_name'];
 			$date=$_POST['date'];
+			date_default_timezone_set("Asia/kolkata");
 			$des=$_POST['description'];
 			$insert="insert into upload (heading,title,image,date,description) value('$head','$title','$image_name','$date','$des')";
 			$query=mysqli_query($db,$insert);
@@ -69,11 +97,6 @@ include("db.php");
 			
 		}
 	?>
-	 <?php
-        if(!isset($_SESSION['username'])){
-            header("location:index.php");
-            exit();
-        }
-    ?>
+	 
 </body>
 </html>

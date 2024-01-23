@@ -1,8 +1,8 @@
 <?php 
 
-$db = mysqli_connect("localhost","root","","programmer");
-if($db){
-    echo("Database connected");
+$db = mysqli_connect("localhost","root","","baba");
+if(!$db){
+    echo("Database not  connected");
 }
 
 ?>

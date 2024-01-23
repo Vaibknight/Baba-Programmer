@@ -1,6 +1,13 @@
 <?php
 session_start();
 include("db.php");
+if(@$_SESSION['username']==""){
+	session_destroy();
+	echo '<script>
+			location.href="login.php"
+		</script>';
+
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -13,18 +20,45 @@ include("db.php");
 	<title>dashboard</title>
 </head>
 <body>
-	<div class="container">
+	<!---start navbar---->
+
+	
+		<nav class="bg-white">
+	
+		      <div class="container-90">
+				 <ul class="menu row grid-3 center">
+			        <li class="padding">
+			        	<a href="fees.php" class="display-flex padding hov">Fees Registration</a>
+			        </li>
+			        <li class="padding">
+			        	<a href="dasboard.php" class="display-flex padding hov">Dashboard</a>
+			        </li>
+			        <li class="padding">
+			        	<a href="logout.php" class="display-flex padding hov">Logout</a>
+			        </li>
+				</ul>  
+		    </div>
+
+  		</nav>
+	
+
+
+
+		<!---end navbar--->
+		<br><br>
+	<div class="container-90">
 		<h2>Welcome:<?php echo($_SESSION['username']);?></h2></br></br>
 		<table style="width:100%;">
 			<thead>
 				<tr>
 					<th>Sr.no</th>
 					<th>Heading</th>
-					<th>Title</th>
+					
 					<th>Images</th>
 					<th>Date</th>
 					<th>Description</th>
-					<th><a href="logout.php" class="danger text-none white">Logout</a></th>
+					<th>Edit</th>
+					<th>Delete</th>
 					
 				</tr>
 			</thead>
@@ -46,9 +80,7 @@ include("db.php");
                     <?php echo($rows['heading']);?>
                 </td>
 
-                <td>
-                    <?php echo($rows['title']);?>
-                </td>
+                
                 
                 <td>
                     <img src="upload/<?php echo($rows['image']);?>" alt="not image" style="width:100px; height:100px;">
@@ -64,18 +96,16 @@ include("db.php");
                 <td>
                     <a href="edit.php?edit=<?php echo($rows['id']);?>" class="edit text-none white">Edit</a>
 					
-                    <a href="delete.php?del=<?php echo($rows['id'])?>"  class="danger text-none white">Delete</a>
+                </td>
+
+                <td>
+                	 <a href="delete.php?del=<?php echo($rows['id'])?>"  class="danger text-none white">Delete</a>
                 </td>
             </tr>
 			</tbody>
 			<?php }?>
 		</table>
 	</div>
-	  <?php
-        if(!isset($_SESSION['username'])){
-            header("location:index.php");
-            exit();
-        }
-    ?>
+	  
 </body>
 </html>
