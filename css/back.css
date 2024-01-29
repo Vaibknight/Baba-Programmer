@@ -34,6 +34,10 @@ body {
   width: 80%;
 }
 
+.grid-2 {
+  display: grid;
+  grid-template-columns: auto auto;
+}
 .grid-3 {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -351,4 +355,10 @@ td {
 .grid-4 {
   display: grid;
   grid-template-columns: auto auto auto auto;
+}
+.print{
+  background-color: #0065f6;
+  color: white;
+  padding: 10px 25px;
+   margin: 10px;
 }

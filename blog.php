@@ -91,7 +91,12 @@ if(@$_SESSION['username']==""){
 
 
 			$insert="insert into upload (heading,image,date,description) value('$head','$image_name','$date','$des')";
+			
 			$query=mysqli_query($db,$insert);
+			echo "<pre>";
+			print_r($query);
+			echo "</pre>";
+			die;
 			if($query){
 				move_uploaded_file("$image_temp","upload/".$image_name);
 				echo("you are inserted successfully");

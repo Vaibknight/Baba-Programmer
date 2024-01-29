@@ -1,12 +1,20 @@
 <?php 
+session_start();
 	 include('db.php');
+	 if(@$_SESSION['username']==''){
+		session_destroy();
+	 	echo '<script>
+	 		location.href="login.php"
+	 	</script>';
+	 }
 ?>
 <html>
 	<head>
-		<title>
-			Web Page
-		</title>
-		<link href="css/style.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/back.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<title>Details Page</title>
 	</head>
 	<body>
 		<?php
@@ -58,10 +66,56 @@
 		
 		
 		?>
+
+<nav class="bg-white">
+	
+	<?php 
+		$count = "select * from counts";
+		$printCount = mysqli_query($db,$count);
+		if(!$printCount){
+			die('Retrieve query error'.$count);
+
+		}
+
+		$totalVisitors = mysqli_num_rows($printCount);
+
+	?>
+
+	
+
+	
+		  <div class="container-90">
+			 <ul class="menu row grid-4 center">
+				<li class="padding "><a href="fees.php" class="display-flex  padding hov">Fees Registration</a></li>
+				<li class="padding"><a href="dasboard.php" class="display-flex   padding hov">Dashboard</a></li>
+				
+				<li class="padding"><a href="logout.php" class="display-flex padding hov">Logout</a></li>
+				<li class="padding" style="position : relative">
+					<div class="left-eye">
+						<div class="shut">
+						<span></span>
+						</div>
+						<div class="ball">
+					</div>
+					</div>
+					<h1 style="position: absolute; right: 30px;"> <?php echo("$totalVisitors");?></h1>
+				</li>
+			</ul>  
+		</div>
+
+	  </nav>
+	
+
+
+
+		<!---end navbar--->
+		<br><br>
+		<h2 class="container-90">Welcome:<?php echo($_SESSION['username']);?></h2></br></br>
+		
 	   
 		<div class="container">
-		     <a href="index.php">Home</a>
-		       <table>
+		    
+		       <table style="width:100%">
 							<thead>
 								<tr>
 								
@@ -98,22 +152,26 @@
 							</tbody>
 						
 					</table>
-				<div class="container">
-					<form  action="#" method="post">
+					<br><br>
+	<br><br>
+
+				<div class="container-90" style="border:3px solid black; background-color: wheat;">
+					<h2 class="h2">Fees Payment</h2>
+					<form  action="#" method="post" class="padding-10" style="margin-left: 20%;">
 					
 						<div>
 							<label>Payment Fees</label>
-							<input type="text" required name="fname" required class="form-control">
+							<input type="text" required name="fname" required class="form-control from">
 							<input type="hidden" name="stuID" value="<?php echo $getId;?>">
-						</div>
+						</div><br><br>
 						<div>
 							<label>date</label>
-							<input type="date" required name="date" required class="form-control">
-						</div>
+							<input type="date" required name="date" required class="form-control from">
+						</div><br><br>
 						
 						
 						
-						<input type="submit" name="Login" value="submit"/>
+						<input type="submit" class="button ml" name="Login" value="submit"/>
 					</form>
 					
 					
@@ -129,5 +187,6 @@
 		
 		
 		</div>
+		<br><br>
 	</body>
 </html>

@@ -134,6 +134,8 @@ session_start();
 									
 									?></td>
 									<td><?php echo($row['creat_date']);?></td>
+
+									<td><button onclick="window.print();" class="print">Print</button></td>
 									
 								</tr>
 								<?php 
@@ -143,6 +145,9 @@ session_start();
 							</tbody>
 						
 					</table>
+					<div class="text-center">
+						<button onclick="window.print();" class="print">Print</button>
+					</div>
 			<?php
 		 
 		 
