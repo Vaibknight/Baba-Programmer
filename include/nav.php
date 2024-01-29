@@ -1,7 +1,7 @@
 <nav class="sticky">
 			<div style="box-shadow:0 -1px 0px 0 rgba(0, 0, 0, 0.2), 0 5px 17px 0 rgba(0, 0, 0, 0.19);" class="padding-tb">
 			<i class="fa fa-navicon navicon display-none"></i>
-				<div class="grid-5" id="navbar">
+				<div class="grid-6" id="navbar">
 				
 					<div class="container-80">
 						<div class="dropdown">
@@ -21,6 +21,11 @@
 					<div class="">
 						<div class="dropdown">
 							<a href="java-course-in-bilaspur-chhattisgarh.php" class="black text-none">Java Programming</a>
+						</div>
+					</div>
+					<div class="">
+						<div class="dropdown">
+							<a href="placed.php" class="black text-none">Placed Students</a>
 						</div>
 					</div>
 					<div class="container-80">

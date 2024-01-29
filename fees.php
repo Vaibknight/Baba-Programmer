@@ -26,20 +26,47 @@
 	</head>
 	<body>
 
-		<nav class="bg-white">
+	<nav class="bg-white">
 	
-		      <div class="container-90">
-				 <ul class="menu row grid-3 center">
-			        <li class="padding "><a href="fees.php" class="display-flex  padding hov">Fees Registration</a></li>
-			        <li class="padding"><a href="dasboard.php" class="display-flex   padding hov">Dashboard</a></li>
-			        <li class="padding"><a href="logout.php" class="display-flex padding hov">Logout</a></li>
-				</ul>  
-		    </div>
+	<?php 
+		$count = "select * from counts";
+		$printCount = mysqli_query($db,$count);
+		if(!$printCount){
+			die('Retrieve query error'.$count);
 
-  		</nav>
+		}
+
+		$totalVisitors = mysqli_num_rows($printCount);
+
+	?>
+
+	
+
+	
+		  <div class="container-90">
+			 <ul class="menu row grid-4 center">
+				<li class="padding "><a href="fees.php" class="display-flex  padding hov">Fees Registration</a></li>
+				<li class="padding"><a href="dasboard.php" class="display-flex   padding hov">Dashboard</a></li>
+				
+				<li class="padding"><a href="logout.php" class="display-flex padding hov">Logout</a></li>
+				<li class="padding" style="position : relative">
+					<div class="left-eye">
+						<div class="shut">
+						<span></span>
+						</div>
+						<div class="ball">
+					</div>
+					</div>
+					<h1 style="position: absolute; right: 30px;"> <?php echo("$totalVisitors");?></h1>
+				</li>
+			</ul>  
+		</div>
+
+	  </nav>
 	
 	<br><br>
-		
+	<br><br>
+		<h2 class="container-90">Welcome:<?php echo($_SESSION['username']);?></h2></br></br>
 				<div class="container-90" style="border:3px solid black; background-color: wheat;">
 					<h2 class="h2">Fees Details..!</h2>
 					<form  action="#" method="post" class="padding-10" style="margin-left: 20%;">

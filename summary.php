@@ -24,33 +24,52 @@ session_start();
 		
 	</head>
 	<body>
-				<nav class="bg-white">
+	<nav class="bg-white">
 	
-		      <div class="container-90">
-				 <ul class="menu row grid-3 center">
-			        <li  class="padding">
-			        	<a href="fees.php" class="display-flex padding hov">Fees Registration</a>
-			        </li>
+	<?php 
+		$count = "select * from counts";
+		$printCount = mysqli_query($db,$count);
+		if(!$printCount){
+			die('Retrieve query error'.$count);
 
-			        <li class="padding">
-			        	<a href="dasboard.php" class="display-flex padding hov">Dashboard</a>
-			        </li>
+		}
 
-			        <li class="padding">
-			        <a href="logout.php" class="display-flex padding hov">Logout</a>
-			        </li>
-				</ul>  
-		    </div>
+		$totalVisitors = mysqli_num_rows($printCount);
 
-  		</nav>
+	?>
+
+	
+
+	
+		  <div class="container-90">
+			 <ul class="menu row grid-4 center">
+				<li class="padding "><a href="fees.php" class="display-flex  padding hov">Fees Registration</a></li>
+				<li class="padding"><a href="dasboard.php" class="display-flex   padding hov">Dashboard</a></li>
+				
+				<li class="padding"><a href="logout.php" class="display-flex padding hov">Logout</a></li>
+				<li class="padding" style="position : relative">
+					<div class="left-eye">
+						<div class="shut">
+						<span></span>
+						</div>
+						<div class="ball">
+					</div>
+					</div>
+					<h1 style="position: absolute; right: 30px;"> <?php echo("$totalVisitors");?></h1>
+				</li>
+			</ul>  
+		</div>
+
+	  </nav>
 	
 
 
 
 		<!---end navbar--->
 
+		
 		<br><br>
-
+		<h2 class="container-90">Welcome:<?php echo($_SESSION['username']);?></h2></br></br>
 
 <?php 
 	 
@@ -105,7 +124,13 @@ session_start();
 									?></td>
 																	
 									<td><?php 
-									 echo $fees-=$row['payment_fee'];
+									if($fees<0){
+										echo("Fees Fully Paid");
+									}else{
+										echo $fees-=$row['payment_fee'];
+									}
+									
+									 
 									
 									?></td>
 									<td><?php echo($row['creat_date']);?></td>

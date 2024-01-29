@@ -150,7 +150,6 @@ footer li {
 }
 
 .input-box input {
-
   width: 94%;
   margin-top: 3px;
   background: transparent;
@@ -188,7 +187,6 @@ label {
 .bd {
   border: 2px solid rgb(255 255 255 / 94%);
   color: #fff;
-
 }
 
 #button {
@@ -233,8 +231,8 @@ td {
 }
 
 /*nav bar */
-.bg-white{
-  background-color:#022d5d;
+.bg-white {
+  background-color: #022d5d;
 }
 .row {
   display: -ms-flexbox;
@@ -258,38 +256,37 @@ td {
   display: flex;
 }
 
-.padding{
-      padding: 26px;
-    display: block;
-    text-decoration: none;
-    color: white;
+.padding {
+  padding: 26px;
+  display: block;
+  text-decoration: none;
+  color: white;
 }
 
-.center{
+.center {
   text-align: center;
-    list-style-type: none;
+  list-style-type: none;
 }
-.hov:hover{
-  background-color:wheat;
- border-radius: 15px 50px;
- color:#860303;;
+.hov:hover {
+  background-color: wheat;
+  border-radius: 15px 50px;
+  color: #860303;
+}
+.padding-10 {
+  padding: 16px;
+}
 
-}
-.padding-10{
-  padding:16px;
-}
-
-.from{
-     display: block;
-    width: 75%;
-    padding: 2px;
-    border: 4px solid #860303;
-    border-radius: 40px;
-    padding: 13px;
-    padding-top:20px;
+.from {
+  display: block;
+  width: 75%;
+  padding: 2px;
+  border: 4px solid #860303;
+  border-radius: 40px;
+  padding: 13px;
+  padding-top: 20px;
 }
 .button {
-  background-color: #04AA6D; /* Green */
+  background-color: #04aa6d; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -297,11 +294,61 @@ td {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  
 }
-.ml{
+.ml {
   margin-left: 32%;
 }
-.bg{
-   background-color: #008CBA;
+.bg {
+  background-color: #008cba;
+}
+.left-eye {
+  background: white;
+  height: 48px;
+  width: 47px;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  border-radius: 75% 0;
+  overflow: hidden;
+}
+.ball {
+  width: 28px;
+  height: 27px;
+  background: #222f3e;
+  border-radius: 50%;
+  border: 8px solid #576;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.shut {
+  width: 300px;
+  height: 160px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  z-index: 999;
+}
+
+.shut span {
+  display: block;
+  width: 100%;
+  height: 15%;
+  background: #ff6b6b;
+  border-radius: 0 0 60% 60%;
+  transition: 0.4s all;
+}
+
+.right-eye:hover > .shut span,
+.left-eye:hover > .shut span {
+  height: 100%;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
 }

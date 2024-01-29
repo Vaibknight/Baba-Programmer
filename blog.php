@@ -83,7 +83,14 @@ if(@$_SESSION['username']==""){
 			$date=$_POST['date'];
 			date_default_timezone_set("Asia/kolkata");
 			$des=$_POST['description'];
-			$insert="insert into upload (heading,title,image,date,description) value('$head','$title','$image_name','$date','$des')";
+
+			echo($head);
+			echo($date);
+			echo($des);
+			echo($image_name);
+
+
+			$insert="insert into upload (heading,image,date,description) value('$head','$image_name','$date','$des')";
 			$query=mysqli_query($db,$insert);
 			if($query){
 				move_uploaded_file("$image_temp","upload/".$image_name);
